@@ -1,0 +1,98 @@
+* {
+  font-family: 'Roboto';
+  color: white;
+}
+
+.container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 40%;
+}
+
+.number-count {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 2px;
+  width: 250px;
+}
+
+#searchInput {
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.head {
+  color: #219a6f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.image {
+  width: 50%;
+}
+
+.main-head {
+  font-size: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    height: 30%;
+    order: 0;
+  }
+
+  .input-box {
+    width: 250px;
+  }
+
+  .card {
+    order: 1;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .main-head {
+    font-size: 25px;
+  }
+
+  .image {
+    width: 90%;
+  }
+}
